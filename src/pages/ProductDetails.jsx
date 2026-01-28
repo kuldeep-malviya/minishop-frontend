@@ -16,7 +16,7 @@ const ProductDetails = () => {
        ]
     useEffect(()=> {
         const fetchProduct = async ()=>{
-             const res= await axios.get(`https://minishop-frontend-2.onrender.com/products/${id}`)
+             const res= await axios.get(`https://dummyjson.com/products/${id}`)
             const data= await res.data
             setFlag(true)
             SetProducts(data)
