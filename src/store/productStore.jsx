@@ -17,7 +17,7 @@ const [products,dispatch] = useReducer(Reducer,[])
 
 useEffect(()=>{
     const fetchData =  async()=>{
-        const res = await axios.get("http://dummyjson.com/products")
+        const res = await axios.get("https://minishop-backend-1.onrender.com/products")
         console.log(res.data.products)
         dispatch({
             type:"set-products",
